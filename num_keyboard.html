@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>假键盘实现</title>
+	<link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+	<div
+		class="input-container"
+		tabindex="-1"
+		onblur="clearCursorFlash(event)"
+		onclick="setCursorFlash()">
+		<div tabindex="1" class="input-area">
+			<span class="cursor"></span>
+		</div>
+		<div class="right-space" onclick="moveCursor(event)"></div>
+	</div>
+	<div class="key-container">
+		<div class="error-down" onclick="hideKeyBoard()">
+			<span></span>
+		</div>
+		<div class="row">
+			<p class="num-item">1</p>
+			<p class="num-item">2</p>
+			<p class="num-item">3</p>
+		</div>
+		<div class="row">
+			<p class="num-item">4</p>
+			<p class="num-item">5</p>
+			<p class="num-item">6</p>
+		</div>
+		<div class="row">
+			<p class="num-item">7</p>
+			<p class="num-item">8</p>
+			<p class="num-item">9</p>
+		</div>
+		<div class="row">
+			<p class="num-item">.</p>
+			<p class="num-item">0</p>
+			<div class="delete" id="cross" onclick="deleteElement()">&#215;</div>
+		</div>
+
+	</div>
+	<script type="text/javascript" src="index.js"></script>
+</body>
+</html>

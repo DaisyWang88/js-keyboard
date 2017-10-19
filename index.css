@@ -1,0 +1,80 @@
+	body{
+		margin: 0;
+
+	}
+/*	input {
+		visible: hidden;
+	}*/
+	.input-container{
+		overflow: hidden;
+		border: 1px solid #666666;
+		font-size: 50px;
+	}
+ .input-area{
+  	height: 100px;
+  	line-height: 100px;
+  	display: flex;
+  	float: left;
+  }
+	.key-container{
+		position: fixed;
+		z-index: 999;
+		bottom: 0;
+		width: 100%;
+		font-size: 50px;
+		/*display: flex;
+		flex-wrap: wrap;
+		align-content: flex-start;*/
+		height:552px;
+		border: 0.5px solid #666666;
+		border-top: 1px solid #666666;
+	}
+	.error-down{
+		height: 80px;
+		text-align: center;
+	}
+	.error-down span{
+		display: inline-block;
+		border-style: none solid solid none;
+		border-color: #666666;
+		width: 40px;
+		height: 40px;
+		transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+	}
+	.row {
+		display: flex;
+	}
+	p, .delete {
+		box-sizing: border-box;
+		flex: 1;
+
+		height: 120px;
+		border: 1px solid black;
+		margin: 0;
+		text-align: center;
+		line-height: 120px;
+		border: 1px solid #666666;
+	}
+
+	.cursor{
+		width: 4px;
+		height: 80px;
+		background-color: #2C96EF;
+		margin: 0 3px 0  3px;
+	}
+	.space{
+		width: 10px;
+		height: 80px;
+		margin-right: -2px;
+	}
+	.right-space{
+		overflow: hidden;
+		height: 100px;
+	}
+	.hidden {
+		visibility:hidden;
+	}
