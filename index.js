@@ -198,6 +198,7 @@ function setCursorFlash() {
 //输入框失去焦点时光标隐藏
 function clearCursorFlash(event) {
 	stopBubble(event);
+	hideKeyBoard();
 	var cursor = document.getElementsByClassName('cursor')[0]; //获取光标
 	clearInterval(intervalId);
 	cursor.className = 'cursor hidden';
