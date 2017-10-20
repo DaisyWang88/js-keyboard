@@ -1,6 +1,6 @@
 	body{
 		margin: 0;
-
+		background-color: #F5F5F5;
 	}
 /*	input {
 		visible: hidden;
@@ -9,12 +9,17 @@
 		overflow: hidden;
 		border: 1px solid #666666;
 		font-size: 50px;
+		width: 80%;
+		margin: 200px auto 0 auto;
+		background-color: #ffffff;
 	}
  .input-area{
   	height: 100px;
   	line-height: 100px;
   	display: flex;
   	float: left;
+  	padding: 10px 0 10px;
+
   }
 	.key-container{
 		position: fixed;
@@ -28,6 +33,7 @@
 		height:552px;
 		border: 0.5px solid #666666;
 		border-top: 1px solid #666666;
+		background-color: #ffffff;
 	}
 	.error-down{
 		height: 80px;
@@ -48,7 +54,7 @@
 	.row {
 		display: flex;
 	}
-	p, .delete {
+	.num-item, .delete {
 		box-sizing: border-box;
 		flex: 1;
 
@@ -57,14 +63,13 @@
 		margin: 0;
 		text-align: center;
 		line-height: 120px;
-		border: 1px solid #666666;
 	}
 
 	.cursor{
 		width: 4px;
 		height: 80px;
 		background-color: #2C96EF;
-		margin: 0 3px 0  3px;
+		margin: 10px 3px 0  3px;
 	}
 	.space{
 		width: 10px;
@@ -77,4 +82,16 @@
 	}
 	.hidden {
 		visibility:hidden;
+	}
+	.b-gray{
+		background-color: #D0D5DB;
+	}
+	.tips{
+		width: 100%;
+		text-align: center;
+		margin-top: 50px;
+		border-style: none;
+		font-size: 30px;
+		line-height: 30px;
+		color:  #2C96EF;
 	}

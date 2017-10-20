@@ -12,13 +12,23 @@
 		tabindex="-1"
 		onblur="clearCursorFlash(event)"
 		onclick="setCursorFlash()">
-		<div tabindex="1" class="input-area">
+		<div tabindex="-1" class="input-area">
 			<span class="cursor"></span>
 		</div>
 		<div class="right-space" onclick="moveCursor(event)"></div>
 	</div>
+
+	<div class="tips">
+		<p>输入框、光标、键盘全是假的，没有用到input</p>
+		<p>控制只能输入一位小数位</p>
+		<p>若光标在第一位且输入的为'.',自动第一位补'0',变成'0.'</p>
+		<p>可以隐藏键盘</p>
+		<p>失去焦点隐藏光标</p>
+		<p>点击输入框，光标出现并闪动，键盘弹出</p>
+	</div>
+
 	<div class="key-container">
-		<div class="error-down" onclick="hideKeyBoard()">
+		<div class="error-down" onclick="hideKeyBoard(event)">
 			<span></span>
 		</div>
 		<div class="row">
@@ -37,9 +47,9 @@
 			<p class="num-item">9</p>
 		</div>
 		<div class="row">
-			<p class="num-item">.</p>
+			<p class="num-item b-gray">.</p>
 			<p class="num-item">0</p>
-			<div class="delete" id="cross" onclick="deleteElement()">&#215;</div>
+			<div class="delete b-gray" id="cross" onclick="deleteElement()">&#215;</div>
 		</div>
 
 	</div>

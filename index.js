@@ -65,7 +65,7 @@ elements.forEach(function(val, index, arr) {
       }
 			insert(value);
 		}
-
+		stopBubble(event);
 	});
 });
 //移动光标位置
@@ -197,11 +197,10 @@ function setCursorFlash() {
 
 //输入框失去焦点时光标隐藏
 function clearCursorFlash(event) {
-	stopBubble(event);
-	hideKeyBoard();
 	var cursor = document.getElementsByClassName('cursor')[0]; //获取光标
 	clearInterval(intervalId);
 	cursor.className = 'cursor hidden';
+	stopBubble(event);
 }
 function stopBubble(e) {
   if (e && e.stopPropagation) {
@@ -211,9 +210,11 @@ function stopBubble(e) {
   }
 }
 //隐藏keyboard
-function hideKeyBoard() {
+function hideKeyBoard(event) {
+
 	var keyBoard = document.getElementsByClassName('key-container')[0];
 	keyBoard.className = 'key-container hidden';
+	stopBubble(event);
 }
 //弹出keyboard
 function showKeyBoard() {
