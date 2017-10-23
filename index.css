@@ -5,6 +5,7 @@
 /*	input {
 		visible: hidden;
 	}*/
+
 	.input-container{
 		overflow: hidden;
 		border: 1px solid #666666;
@@ -23,6 +24,7 @@
   }
 	.key-container{
 		position: fixed;
+		right: -1px;
 		z-index: 999;
 		bottom: 0;
 		width: 100%;
@@ -31,7 +33,6 @@
 		flex-wrap: wrap;
 		align-content: flex-start;*/
 		height:552px;
-		border: 0.5px solid #666666;
 		border-top: 1px solid #666666;
 		background-color: #ffffff;
 	}
@@ -59,7 +60,9 @@
 		flex: 1;
 
 		height: 120px;
-		border: 1px solid black;
+		border-style: solid solid none none;
+		border-width: 1px;
+		border-color: #666666;
 		margin: 0;
 		text-align: center;
 		line-height: 120px;
@@ -92,6 +95,6 @@
 		margin-top: 50px;
 		border-style: none;
 		font-size: 30px;
-		line-height: 30px;
+		line-height: 50px;
 		color:  #2C96EF;
 	}
