@@ -129,6 +129,10 @@ function deleteElement() {
 	if(getInputStr().search(/^\.\d*/) > -1) {
 		insert(0);
 	}
+	if(getInputStr() === ''){ //元素为空placeholder显示
+		var placeHolder = document.getElementsByClassName('holder')[0];
+		placeHolder.className = 'holder';
+	}
 }
 //获取输入框的元素
 function getInputStr() {
