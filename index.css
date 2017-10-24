@@ -82,6 +82,8 @@
 	.right-space{
 		overflow: hidden;
 		height: 100px;
+		color: #999999;
+		line-height: 100px;
 	}
 	.hidden {
 		visibility:hidden;

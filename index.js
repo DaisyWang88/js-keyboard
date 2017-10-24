@@ -59,7 +59,6 @@ elements.forEach(function(val, index, arr) {
 			// inputArea.insertBefore(space, cursor);//插入空列
 			// inputArea.insertBefore(span, cursor);//插入值
 			var cursor = document.getElementsByClassName('cursor')[0];
-
       if (value == '.' && (!cursor.previousSibling || cursor.previousSibling.nodeName == '#text')) {
         insert(0);
       }
@@ -175,6 +174,10 @@ function isBeforeCursor() {
 
 //设置光标定时任务
 function setCursorFlash() {
+	//placeholder 隐藏
+	var placeHolder = document.getElementsByClassName('holder')[0];
+	placeHolder.className = 'holder hidden';
+
 	var cursor = document.getElementsByClassName('cursor')[0];
 	var inputContainer = document.getElementsByClassName('input-container')[0];
 	cursor.className = "cursor";
