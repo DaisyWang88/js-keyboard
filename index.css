@@ -80,6 +80,7 @@
 		margin-right: -2px;
 	}
 	.right-space{
+		padding-top: 10px;
 		overflow: hidden;
 		height: 100px;
 		color: #999999;
